@@ -5,11 +5,11 @@ import SignInnPage from "../../../../support/PageObject/SignInnPage";
 const homePage = new HomePage();
 const signInnPage = new SignInnPage();
 
-Given('I open amazon home page',function(){
+Given('User open amazon home page',function(){
     cy.visit(Cypress.env('url'));
 })
 
-When('I click on Signin button',function(){
+When('User click on Signin button',function(){
     homePage.getSignInButton().click();
 })
 
