@@ -20,6 +20,9 @@ class HomePage{
     getCart(){
         return cy.get('#nav-cart');
     }
+    getGiftCard(){
+        return cy.get("a[data-csa-c-content-id='nav_cs_gc']");
+    }
 }
 
 export default HomePage;

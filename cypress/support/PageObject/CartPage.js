@@ -14,5 +14,8 @@ class CartPage{
     getCartFirstEl(){
         return cy.get('#itemName_I1Y1ITXUZ5QGRF');
     }
+    getPromotionCode(){
+        return cy.get('.a-row.a-spacing-base > :nth-child(1) > .a-size-medium');
+    }
 }
 export default CartPage;
