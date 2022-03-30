@@ -11,5 +11,8 @@ class CartPage{
     getAddress(){
         return cy.get(".clearfix");
     }
+    getCartFirstEl(){
+        return cy.get('#itemName_I1Y1ITXUZ5QGRF');
+    }
 }
 export default CartPage;

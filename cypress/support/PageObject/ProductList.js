@@ -8,5 +8,8 @@ class ProductList{
     getAddToCart(){
         return cy.get("#add-to-cart-button");
     }
+    getAddWishList(){
+        return cy.get("#add-to-wishlist-button-submit");
+    }
 }
 export default ProductList;
