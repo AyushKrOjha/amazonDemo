@@ -1,9 +1,9 @@
 class CartPage{
     getPrice(){
-        return cy.get("div[data-name='Active Items'] p span span");
+        return cy.get("span.a-size-medium.a-color-base.sc-price.sc-white-space-nowrap.sc-product-price.a-text-bold");
     }
     getTotalPrice(){
-        return cy.get("span[id='sc-subtotal-amount-activecart'] span span");
+        return cy.get("#sc-subtotal-amount-buybox span.a-size-medium.a-color-base.sc-price.sc-white-space-nowrap");
     }
     getProceedButton(){
         return cy.get("input[name='proceedToRetailCheckout']");

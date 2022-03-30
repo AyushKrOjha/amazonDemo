@@ -18,7 +18,7 @@ class HomePage{
         return cy.get('#nav-search-submit-button');
     }
     getCart(){
-        return cy.get('##nav-cart');
+        return cy.get('#nav-cart');
     }
 }
 
