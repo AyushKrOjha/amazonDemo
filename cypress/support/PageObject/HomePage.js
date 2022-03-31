@@ -23,6 +23,12 @@ class HomePage{
     getGiftCard(){
         return cy.get("a[data-csa-c-content-id='nav_cs_gc']");
     }
+    getAllButton(){
+        return cy.get('#nav-hamburger-menu');
+    }
+    getYourAccount(){
+        return cy.get(':nth-child(29) > .hmenu-item');
+    }
 }
 
 export default HomePage;
