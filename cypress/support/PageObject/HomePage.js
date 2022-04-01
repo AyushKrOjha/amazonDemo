@@ -29,6 +29,9 @@ class HomePage{
     getYourAccount(){
         return cy.get(':nth-child(29) > .hmenu-item');
     }
+    getFlightTicket(){
+        return cy.get('.hmenu-visible > :nth-child(24) > .hmenu-item');
+    }
 }
 
 export default HomePage;
