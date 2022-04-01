@@ -32,6 +32,9 @@ class HomePage{
     getFlightTicket(){
         return cy.get('.hmenu-visible > :nth-child(24) > .hmenu-item');
     }
+    getImdbLink(){
+        return cy.get("a[href='https://www.imdb.com/']");
+    }
 }
 
 export default HomePage;
