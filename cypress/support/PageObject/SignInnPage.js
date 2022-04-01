@@ -11,5 +11,8 @@ class SignInnPage{
     getSigningButton(){
         return cy.get("#signInSubmit");
     }
+    getInvalidPasswordMsg(){
+        return cy.get('#auth-warning-message-box > .a-box-inner');
+    }
 }
 export default SignInnPage;
