@@ -1,4 +1,7 @@
 /// <reference types="cypress" />
+import ProductPage from "../../support/PageObject/ProductPage"
+
+const productPage = new ProductPage()
 
 describe('purchase product',function(){
     Cypress.on('uncaught:exception', (err, runnable) => {
@@ -18,5 +21,6 @@ describe('purchase product',function(){
         cy.visit(Cypress.env('url'))
         cy.login(this.data.username,this.data.password,this.data.name)
         cy.SelectProduct(this.data1.product,this.data1.details)
+        productPage.getBuyNowButton().click()
     })
 })

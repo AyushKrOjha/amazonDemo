@@ -1,8 +1,8 @@
 {
-    "//testFiles": "**/*.feature",
-    "defaultCommandTimeout": 8000,
-    "env": {
-        "url": "https://www.amazon.in/",
-        "TAGS": "not @ignore"
-    }
+  "//testFiles": "**/*.feature",
+  "env": {
+    "url": "https://www.amazon.in/",
+    "TAGS": "not @ignore"
+  },
+  "projectId": "qfan2j"
 }

@@ -22,11 +22,15 @@ const productList = new ProductList();
 Cypress.Commands.add('SelectProduct', (productName, description) => {
     homePage.getSearchTextBox().type(productName);
     homePage.getSearchButton().click();
+    let count = 0 
     productList.getIndividualProduct().each((el, index, $list)=>{
-        if(el.text()==description){
+        let text = el.text()
+        if(text===description && count == 0){
+            count++
             productList.gerProductClick().eq(index).then(function(elm){
                 const link = elm.prop('href');
-                cy.visit(link);
+                cy.visit(link)
+                return false;
             })
         }
     })
