@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-06T09:44:53.649Z",
+    "end": "2022-04-06T09:45:51.896Z",
+    "duration": 58247,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06c59db8-2c01-4d43-a852-8166ea4cd335",
+      "title": "",
+      "fullFile": "cypress/integration/Develop/purchase.js",
+      "file": "cypress/integration/Develop/purchase.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9e27517-c4a9-41e4-8424-e5359b93bb6a",
+          "title": "purchase product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User purchases a product",
+              "fullTitle": "purchase product User purchases a product",
+              "timedOut": null,
+              "duration": 49937,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\ncy.login(this.data.username, this.data.password, this.data.name);\ncy.SelectProduct(this.data1.product, this.data1.details);\nproductPage.getBuyNowButton().click();",
+              "err": {},
+              "uuid": "21971a42-ba88-4f5a-8c03-60956f2ec39c",
+              "parentUUID": "d9e27517-c4a9-41e4-8424-e5359b93bb6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "21971a42-ba88-4f5a-8c03-60956f2ec39c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 49937,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

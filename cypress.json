@@ -5,5 +5,8 @@
     "url": "https://www.amazon.in/",
     "TAGS": "not @ignore"
   },
+  "retries":{
+    "runMode":1
+  },
   "projectId": "qfan2j"
 }

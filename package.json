@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "HeadlessModeTest": "node_modules//.bin//cypress run",
+    "DashboardTestRun": "node_modules//.bin//cypress run --record --key 138e4e7e-ca16-4287-a72f-2050f8a2e5bd",
+    "HeadedMode": "node_modules//.bin//cypress run --headed",
+    "RunPurchase": "node_modules//.bin//cypress run --headed --spec cypress/integration/Develop/purchase.js"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
