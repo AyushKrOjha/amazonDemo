@@ -20,7 +20,11 @@ describe('purchase product',function(){
     it('User purchases a product',function(){
         cy.visit(Cypress.env('url'))
         cy.login(this.data.username,this.data.password,this.data.name)
-        cy.SelectProduct(this.data1.product,this.data1.details)
+        Cypress.env({
+            product: 'Ferrero Rocher',
+            description: 'Ferrero Rocher, 16 Pieces, 200 gm',
+        })
+        cy.SelectProduct(Cypress.env('product'),Cypress.env('description'))
         productPage.getBuyNowButton().click()
     })
 })
