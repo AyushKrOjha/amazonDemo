@@ -1,7 +1,7 @@
 {
   "//testFiles": "**/*.feature",
   "reporter":"mochawesome",
-  "env": {
+  "//env": {
     "url": "https://www.amazon.in/",
     "TAGS": "not @ignore"
   },
